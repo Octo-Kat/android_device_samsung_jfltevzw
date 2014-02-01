@@ -20,6 +20,10 @@ $(call inherit-product-if-exists, vendor/samsung/jfltevzw/jfltevzw-vendor.mk)
 # Disable MSB for GPS
 NEEDS_GPS_MSB_DISABLED := true
 
+# OctOS Packages
+PRODUCT_PACKAGES += \
+    Torch
+
 # loki
 PRODUCT_PACKAGES += \
     loki_patch \
